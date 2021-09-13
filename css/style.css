@@ -91,12 +91,23 @@ p {
 }
 
 /* Therapy */
-.therapy {
+.therapy,
+.about {
   padding-top: 10%;
 }
 
 .therapy p {
   padding-bottom: 1rem;
+}
+
+/* About */
+
+.about .text-wrapper {
+  width: 70%;
+}
+
+.about img {
+  height: 100%;
 }
 
 @media screen and (max-width: 992px) {
