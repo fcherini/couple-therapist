@@ -92,7 +92,8 @@ p {
 
 /* Therapy */
 .therapy,
-.about {
+.about,
+.resources {
   padding-top: 10%;
 }
 
@@ -110,16 +111,53 @@ p {
   height: 100%;
 }
 
+/* Resources */
+
+.resources h3 {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.05) inset;
+  padding: 10px;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: all 0.2s linear;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0) inset;
+}
+
+/* Media Queries */
 @media screen and (max-width: 992px) {
-  .text-wrapper {
-    width: 100%;
-  }
+  /* Global */
   .home img,
   .therapy img {
     width: 50%;
     margin: auto;
   }
+
+  /* Home */
+  .text-wrapper {
+    width: 100%;
+  }
   .btn {
     margin: 30px auto 50px auto;
+  }
+
+  /* About */
+  .about img {
+    width: 20%;
+    margin: auto;
+  }
+  .about .text-wrapper {
+    width: 100%;
+  }
+
+  /* Resources */
+  .card {
+    width: 50%;
   }
 }
