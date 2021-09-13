@@ -1,0 +1,88 @@
+:root {
+  --lightColor: #fcecdc;
+  --darkColor: #233863;
+  --primaryColor: #afc3fe;
+  --textColor: #515151;
+  --mainFont: "Actor", sans-serif;
+  --secondFont: "Domine", serif;
+}
+
+* {
+  font-family: var(--mainFont);
+}
+
+/* Global */
+.container {
+  width: 80vw;
+}
+
+h2 {
+  font-family: var(--secondFont);
+  color: var(--darkColor);
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+h3 {
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  color: var(--textColor);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--lightColor);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.nav-link {
+  color: var(--darkColor);
+  margin-left: 1rem;
+  text-align: right;
+}
+
+/* Home */
+.home {
+  padding-top: 12%;
+}
+
+.home .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-wrapper p {
+  font-size: 1.25rem;
+}
+
+.home img {
+  width: 40%;
+}
+
+.btn {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--darkColor);
+  border-radius: 2px;
+  color: var(--darkColor);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 1rem 2rem;
+  transition: all 0.25s linear;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
