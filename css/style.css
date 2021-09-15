@@ -15,6 +15,7 @@
 .container {
   width: 80vw;
   display: flex;
+  gap: 50px;
   justify-content: space-between;
 }
 
@@ -53,14 +54,35 @@ p {
   position: fixed;
 }
 
+.navbar .container {
+  justify-content: end !important;
+}
+
 .nav-link {
-  color: var(--darkColor);
+  color: var(--darkColor) !important;
   margin-left: 1rem;
   text-align: right;
 }
 
+.nav-link:hover {
+  color: var(--primaryColor) !important;
+}
+
+.nav-link-active {
+  text-decoration: underline !important;
+}
+
+.navbar-toggler {
+  border: 0px solid #fff;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* Home */
-.home {
+#home {
   padding-top: 12%;
 }
 
@@ -91,29 +113,29 @@ p {
 }
 
 /* Therapy */
-.therapy,
-.about,
-.resources {
+#therapy,
+#about,
+#resources {
   padding-top: 10%;
 }
 
-.therapy p {
+#therapy p {
   padding-bottom: 1rem;
 }
 
 /* About */
 
-.about .text-wrapper {
+#about .text-wrapper {
   width: 70%;
 }
 
-.about img {
+#about img {
   height: 100%;
 }
 
 /* Resources */
 
-.resources h3 {
+#resources h3 {
   text-align: center;
 }
 
@@ -133,8 +155,8 @@ p {
 /* Media Queries */
 @media screen and (max-width: 992px) {
   /* Global */
-  .home img,
-  .therapy img {
+  #home img,
+  #therapy img {
     width: 50%;
     margin: auto;
   }
@@ -148,11 +170,11 @@ p {
   }
 
   /* About */
-  .about img {
+  #about img {
     width: 20%;
     margin: auto;
   }
-  .about .text-wrapper {
+  #about .text-wrapper {
     width: 100%;
   }
 
