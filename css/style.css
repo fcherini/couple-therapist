@@ -7,16 +7,24 @@
   --secondFont: "Domine", serif;
 }
 
+/*------ Global ------*/
 * {
   font-family: var(--mainFont);
 }
 
-/* Global */
 .container {
   width: 80vw;
   display: flex;
   gap: 50px;
   justify-content: space-between;
+}
+
+#therapy,
+#about,
+#resources,
+#contact,
+footer {
+  margin-top: 10%;
 }
 
 h2 {
@@ -46,7 +54,7 @@ p {
   color: var(--textColor);
 }
 
-/* Navbar */
+/*------ Navbar ------*/
 .navbar {
   background: var(--lightColor);
   text-transform: uppercase;
@@ -81,7 +89,7 @@ p {
   box-shadow: none;
 }
 
-/* Home */
+/*------ Home ------*/
 #home {
   padding-top: 12%;
 }
@@ -112,19 +120,12 @@ p {
   background-color: transparent;
 }
 
-/* Therapy */
-#therapy,
-#about,
-#resources {
-  padding-top: 10%;
-}
-
+/*------ Therapy ------*/
 #therapy p {
   padding-bottom: 1rem;
 }
 
-/* About */
-
+/*------ About ------*/
 #about .text-wrapper {
   width: 70%;
 }
@@ -133,8 +134,7 @@ p {
   height: 100%;
 }
 
-/* Resources */
-
+/*------ Resources ------*/
 #resources h3 {
   text-align: center;
 }
@@ -152,7 +152,44 @@ p {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0) inset;
 }
 
-/* Media Queries */
+/*------ Contact ------*/
+#gmapcanvas img.text-marker {
+  max-width: none !important;
+  background: none !important;
+}
+#gmapcanvas img {
+  max-width: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.input {
+  border: 1px solid var(--darkColor);
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.85rem;
+  color: var(--primaryColor);
+}
+
+/*------ Footer ------*/
+footer {
+  width: 100vw;
+  background: var(--primaryColor);
+  padding: 1rem 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+/*------ Media Queries ------*/
 @media screen and (max-width: 992px) {
   /* Global */
   #home img,
@@ -181,5 +218,11 @@ p {
   /* Resources */
   .card {
     width: 50%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
